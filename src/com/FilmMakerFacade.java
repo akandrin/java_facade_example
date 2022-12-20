@@ -33,6 +33,8 @@ public class FilmMakerFacade {
             filmDirector.ClearActors();
         }
         Film film = videoEditer.Edit(partsFilm);
-        return film;
+
+        Producer producer = new Producer();
+        return producer.Produce(film);
     }
 }
